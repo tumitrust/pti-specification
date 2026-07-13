@@ -39,7 +39,7 @@ Detailed step-by-step for normative changes: [Contribution process](/pti/governa
 ## Proposing a specification change (RFC path)
 
 1. [Open a GitHub issue](https://github.com/tumitrust/pti-specification/issues) with the problem statement and compatibility notes.
-2. Fork the [pti-specification](https://github.com/tumitrust/pti-specification) repository (or contribute via PR from the monorepo sync flow).
+2. Fork the [pti-specification](https://github.com/tumitrust/pti-specification) repository.
 3. Add an RFC under `rfcs/` using the template, status **Draft**.
 4. Request review; maintainers advance status per [RFC process](/pti/governance/rfc-process).
 
