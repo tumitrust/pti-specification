@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Why PTI
-description: Manifesto — Trust → Portable → Programmable → Institution → Economic inclusion. Theory, not product brochure.
+description: Why Portable Trust Infrastructure exists — trust fragmentation, portability, and economic inclusion.
 ---
 
 import PdfDownloadBar from '@site/src/components/PdfDownloadBar';

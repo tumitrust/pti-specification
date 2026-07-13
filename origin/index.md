@@ -17,10 +17,6 @@ import SpecHero from '@site/src/components/SpecHero';
   ]}
 />
 
-:::info Reading guide
-This document is **not** a product brochure. It is the historical foundation researchers, developers, enterprises, and analysts can reference when asking: *who defined PTI, why it exists, and how the ecosystem is meant to evolve.*
-:::
-
 ## Three layers — read this first
 
 | Layer | What it is | Relationship |
@@ -106,7 +102,7 @@ PTI introduces an infrastructure layer where trust can become:
 | **Auditable** | Provenance, consent, and retention are specification requirements |
 | **Interoperable** | Independent implementations exchange trust via shared semantics |
 
-See also [Why PTI exists](/pti/introduction/why-pti-exists) for the market-facing manifesto and [Problems with existing systems](/pti/introduction/problems-with-existing-systems) for comparative analysis.
+See also [Why PTI exists](/pti/introduction/why-pti-exists) and [Problems with existing systems](/pti/introduction/problems-with-existing-systems) for comparative analysis.
 
 ---
 
@@ -223,17 +219,13 @@ Full process detail: [PTI Ecosystem Governance](/pti/governance/).
 
 ## 9. Founding statement
 
-:::tip Founding statement
-**Portable Trust Infrastructure (PTI)** was pioneered by **TumiTrust Technologies** to establish a new architectural model for portable, interoperable trust across institutions and life contexts.
+Portable Trust Infrastructure (PTI) was pioneered by **TumiTrust Technologies** to establish an architectural model for portable, interoperable trust across institutions and life contexts.
 
-TumiTrust created the initial PTI specifications, terminology, and reference implementation, and contributes operational learnings back into the public standard.
+TumiTrust authored the initial specifications, terminology, and reference implementation, and feeds operational learnings back into the public standard.
 
-PTI is designed as an **open ecosystem**: independent implementations are encouraged, conformance is verifiable, and governance is structured to mature beyond any single organization.
+PTI is an **open ecosystem**: independent implementations are encouraged, conformance is verifiable, and governance is designed to mature beyond any single organization.
 
-TumiTrust remains committed to advancing PTI through transparent documentation, RFC-driven evolution, and collaboration with developers, institutions, and researchers worldwide.
-:::
-
-This statement is suitable for press releases, conference talks, investor materials, and academic citation. For governance commitments, see the [Public governance statement](/pti/governance/public-governance-statement).
+Governance commitments are documented in the [Public governance statement](/pti/governance/public-governance-statement).
 
 ---
 
@@ -267,4 +259,4 @@ Today, these functions are **distributed** across the [governance section](/pti/
 
 ---
 
-*Document type: historical foundation. Normative requirements remain in the [PTI Specification v1.0](/pti/specification/v1.0/) and [RFCs](/pti/rfcs/).*
+Normative requirements are in the [PTI Specification v1.0](/pti/specification/v1.0/) and [RFCs](/pti/rfcs/).
