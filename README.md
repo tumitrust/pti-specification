@@ -48,7 +48,7 @@ Read [CONTRIBUTING.md](./CONTRIBUTING.md) for lightweight guidance. Larger speci
 
 ## Published documentation
 
-Specification pages are published on the main TumiTrust site at **[tumitrust.com/docs/pti](https://tumitrust.com/docs/pti/)** (under `/docs/` on [tumitrust.com](https://tumitrust.com)), alongside TumiTrust implementation guides. This repository is the standalone source tree for PTI content, synced from the [tumitrust](https://github.com/tumitrust/tumitrust) monorepo via git subtree.
+Specification pages are published on the main TumiTrust site at **[tumitrust.com/docs/pti](https://tumitrust.com/docs/pti/)** (under `/docs/` on [tumitrust.com](https://tumitrust.com)), alongside TumiTrust implementation guides.
 
 ## License
 
