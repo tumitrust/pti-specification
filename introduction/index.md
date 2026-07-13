@@ -10,7 +10,8 @@ description: What PTI is — trust produced, exchanged, resolved, and consumed a
     <h1 class="pti-spec-hero__title">Introduction to PTI</h1>
     <p class="pti-spec-hero__lead">An infrastructure category for systems that produce, exchange, resolve, and consume trust across contexts — with portability, explainability, consent, and governance.</p>
     <div class="pti-spec-hero__meta">
-      <span class="pti-spec-badge pti-spec-badge--normative">Specification</span>
+      <span class="pti-spec-badge pti-spec-badge--normative">PTI Specification v1.0</span>
+      <span class="pti-spec-badge pti-spec-badge--stable">Status: Stable</span>
       <span class="pti-spec-badge">Vendor-neutral</span>
     </div>
   </div>

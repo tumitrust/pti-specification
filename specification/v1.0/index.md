@@ -2,9 +2,21 @@
 title: PTI Specification v1.0
 description: Normative overview of Portable Trust Infrastructure v1.0 — document catalogue, conformance classes, and reading order.
 sidebar_position: 1
+displayed_sidebar: ptiSidebar
 ---
 
-# PTI Specification v1.0
+import SpecHero from '@site/src/components/SpecHero';
+
+<SpecHero
+  kicker="Normative specification"
+  title="PTI Specification v1.0"
+  lead="Vendor-neutral requirements for portable, programmable, interoperable trust — production, exchange, resolution, and consumption across institutional boundaries."
+  badges={[
+    {label: 'PTI Specification v1.0', variant: 'normative'},
+    {label: 'Status: Stable', variant: 'stable'},
+    {label: 'RFC 2119 normative', variant: 'default'},
+  ]}
+/>
 
 Portable Trust Infrastructure (PTI) v1.0 defines a vendor-neutral architecture for generating, exchanging, resolving, and consuming **trust intelligence** across institutional boundaries. This specification separates trust **production** (signal ingestion and attestation) from trust **consumption** (lookup, verification, and decision support).
 

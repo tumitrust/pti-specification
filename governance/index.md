@@ -18,7 +18,7 @@ This section covers **ecosystem governance** — the processes, roles, and polic
 | **Technical direction** | Architecture Review Board | Cross-RFC coherence, breaking-change review |
 | **Security of the standard** | Security Review Group | Threat models, disclosure coordination |
 | **Compatibility claims** | Conformance Program | Profiles, certification, test suites |
-| **Community participation** | Contribution process | Issues, PRs, public review |
+| **Community participation** | [Contribution process](/pti/governance/contribution-process) · [Contributing](/pti/contributing/) | Issues, PRs, public review |
 | **Brand and trademarks** | Trademark policy | Permitted use of PTI marks |
 
 ## What ecosystem governance does not cover
