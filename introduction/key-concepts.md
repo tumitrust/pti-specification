@@ -1,66 +1,62 @@
 ---
 title: Key concepts
 sidebar_position: 2
-description: Portable Trust Infrastructure — 20+ trust contexts, trust lookups (not credit bureaus), and governance obligations.
+description: Core PTI concepts — trust contexts, lookups, signals, and governance — vendor-neutral overview.
 ---
 
 # Key concepts
 
-This page summarizes the ideas behind [Portable Trust Infrastructure](./portable-trust-infrastructure). For definitions of every term, see the [Glossary](../pti/glossary/).
+This page summarizes ideas behind Portable Trust Infrastructure (PTI). For definitions, see the [Glossary](/pti/glossary/). For the category thesis, see [Why PTI exists](/pti/why-pti/).
 
 ## Portable Trust Infrastructure (PTI)
 
-TumiTrust is a **trust platform**, not a traditional credit bureau. Portable Trust Infrastructure lets trust signals travel with a person or organization across **life-area contexts** instead of being locked in one institution’s silo. Partners ingest verified events; institutions run **trust lookups** at decision time.
+PTI is an **infrastructure layer** for trust — not a credit bureau, social network, or star-rating app. It lets trust signals travel with a subject across **life-area contexts** instead of being locked in one institution’s silo.
 
-We are **not** selling a black-box “credit score.” We provide **context-scoped trust intelligence** — explainable signals, provenance, and verification — as infrastructure for lenders, verifiers, and producers.
+| Role | Responsibility |
+|------|----------------|
+| **Trust producer** | Ingests verified activity as **trust events** |
+| **Trust exchange** | Normalizes, governs, and routes signals |
+| **Trust consumer** | Runs **trust lookups** at decision time |
+| **Trust registry** | Maintains `pti_id`, contexts, and policies |
 
-## Trust contexts on one map
+## Trust contexts
 
-TumiTrust documents **20+ trust contexts**: **10 primary** life areas and **10 lens** cross-cutting views. Institutions and partners enable the contexts their contract needs — lending, rental, employment, insurance, civic, and more share the same PTI map and APIs.
+PTI **isolates** signals and scores by **trust context** (lending, rental, employment, insurance, merchant, civic, and cross-cutting lenses such as risk compliance). The [trust context catalogue](/pti/reference-architecture/trust-contexts) documents 20+ registered contexts in the reference architecture.
 
-| Layer | Count | Examples |
-|-------|-------|----------|
-| **Primary** | 10 | `lending`, `rental`, `employment`, `insurance`, `merchant`, … |
-| **Lens** | 10 | `education`, `health`, `civic`, `risk_compliance`, … |
+Implementations **MUST NOT** collapse unrelated life areas into a single opaque score without an explicit, published aggregation policy.
 
-Full ID table: [Documented trust contexts](../tumitrust/platform/partner-trust-contexts#all-20-trust-contexts).
+## Trust profile and lookup
 
-:::note Context map
-TumiTrust documents **20+ trust contexts** (10 primary life areas and 10 lens views). Older materials that cite “10 contexts” describe primary life areas only — not the full documented map.
-:::
+A **trust profile** is the aggregate view of a subject’s signals, context scores, relationships, and assertions. A **trust lookup** is a consumer’s decision-time request to evaluate that profile for a bounded purpose — not a traditional credit bureau file.
 
-## Trust CV and lookup
+Lookup tiers (Basic, Detailed, Predictive, Screening) differ in depth; all are **trust intelligence** exports with explainability requirements per [RFC-004](/pti/rfcs/rfc-004-trust-lookup-api).
 
-A **Trust CV** is the portable record of credibility built from verified events and community signals. A **trust lookup** (trust report) is an institution’s request to evaluate that record for a specific decision — not a bank credit file.
+## Signals, evidence, and explainability
 
-Lookup tiers (**Basic · Detailed · Predictive · Screening dossier**) differ in depth; all are **trust intelligence** exports, not consumer credit bureau reports.
+**Trust events** become normalized **trust signals** with provenance. **Trust evidence** substantiates assertions and outcomes. Consumers receive **drivers**, confidence bands, and **coverage gaps** — not black-box clearance. See [Explainability guide](/pti/specification/v1.0/explainability).
 
-## AI as infrastructure
+Machine learning **MAY** support signal fusion and identity resolution; outcomes **MUST** remain structured and auditable.
 
-Machine learning supports **signal fusion, identity resolution, and context-scoped scoring** — institutions receive structured outcomes with drivers, provenance, and verification hooks suitable for audit and adverse-action workflows.
+## Governance
 
-Deeper governance — consent flows, retention, portability — is covered in [Trust governance](/pti/specification/v1.0/governance) and institution hub **Compliance** settings.
+Consent, retention, purpose binding, subject rights, and audit obligations are specification requirements — see [RFC-007 Governance](/pti/rfcs/rfc-007-governance) and [Specification governance](/pti/specification/v1.0/governance).
 
-## Governance and data rights
+## Participants
 
-Terms of Service and Privacy Policy describe obligations around **trust lookups, risk assessment, identity resolution, and analytics** — a regulated-risk-adjacent category. Borrower **consent**, **data minimization**, **retention limits**, **explainability**, and **data-subject rights** (access, correction, deletion, export) are platform requirements, not optional extras.
+| Participant | Role in PTI |
+|-------------|-------------|
+| **Subjects** | Portable `pti_id`; consent and rights under governance |
+| **Trust producers** | Emit verifiable events and assertions |
+| **Trust consumers** | Request context-scoped lookups |
+| **Implementers** | Operate exchange, registry, graph, and intelligence services |
 
-## Individuals, institutions, and partners
+## Reference implementation
 
-| Audience | Role |
-|----------|------|
-| **Individuals** | Build and share trust through the mobile app and web profile |
-| **Institutions & verifiers** | Run trust lookups, verify reports, integrate via the trust platform API |
-| **Partners (trust producers)** | Ingest signals, configure connectors, and bill via TCU |
-
-## API and sandbox access
-
-Integration documentation covers API endpoints, authentication, and integration patterns. Create **sandbox** and **live** API keys under **API & trust signals** in your workspace. Enable live keys by completing **account verification** in Settings.
+[TumiTrust](/pti/reference-implementation/) demonstrates these concepts in production. Product-specific integration guides live under [TumiTrust documentation](/tumitrust/product-overview/).
 
 ## Next steps
 
-- [Portable Trust Infrastructure overview](./portable-trust-infrastructure)
-- [Trust contexts for producers](../tumitrust/platform/partner-trust-contexts)
-- [Trust platform API](../tumitrust/developer-guides/trust-platform-api)
-- [Get started](../tumitrust/product-overview/get-started)
-- [FAQ](../tumitrust/faq)
+- [Introduction to PTI](/pti/introduction/)
+- [Reference architecture](/pti/reference-architecture/)
+- [PTI Specification v1.0](/pti/specification/v1.0/)
+- [Build Your Own PTI](/pti/build-your-pti/)

@@ -108,7 +108,7 @@ PTI **extends** DPI; it does not compete with sovereign identity or payment auth
 - [RFC-006 — Trust Exchange](/pti/rfcs/rfc-006-trust-exchange)
 - [Interoperability specification](/pti/specification/v1.0/interoperability)
 - [Governance specification](/pti/specification/v1.0/governance)
-- [Why PTI Exists — inclusion thesis](/pti/introduction/why-pti-exists)
+- [Why PTI Exists — inclusion thesis](/pti/why-pti/)
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 title: PTI Whitepaper
-description: Reference paper — trust fragmentation, PTI philosophy, signals, TCU, partner ecosystem, future.
+description: Reference paper — trust fragmentation, PTI philosophy, signals, metering, partner ecosystem, future.
 displayed_sidebar: ptiSidebar
 ---
 
@@ -36,7 +36,7 @@ Formal credit files capture a narrow slice of economic life. Community trade, di
 
 PTI is:
 
-- **Portable** — Trust CV travels with the person
+- **Portable** — Trust profile travels with the subject
 - **Programmable** — APIs and webhooks for institutions
 - **Context-scoped** — 10 primary + 10 lens contexts
 - **Explainable** — drivers and provenance, not black boxes
@@ -45,7 +45,7 @@ PTI is:
 
 - **PTI-ID** for partner-provisioned entities
 - Directory resolution for native members
-- Claim flows for screened external subjects who later join TumiTrust
+- Claim flows for screened external subjects who later enroll in a PTI registry
 
 ## 5. Trust signals
 
@@ -61,13 +61,15 @@ Signal types: partner events, endorsements, badges, verification documents.
 
 ## 6. Trust intelligence
 
-Lookup tiers: **Basic · Detailed · Predictive · Screening dossier** — all **trust intelligence** exports.
+Lookup tiers: **Basic · Detailed · Predictive · Screening dossier** — all **trust intelligence** exports with explainability contracts per the specification.
 
-Institution hub: Lookup Studio → Insights Studio → Verify QR.
+Implementations **MAY** expose operator consoles for search, screening review, and verifiable report export; product naming is deployment-specific.
 
-## 7. Trust Compute Units (TCU)
+## 7. Metering (informative)
 
-TCU meters partner ingest and compute. Postpaid billing mirrors institution report credits. See [Partner billing](/tumitrust/billing/partner-billing).
+Implementations that bill producers **MAY** meter processing as **Trust Compute Units (TCU)** per context per billing period ([RFC-001](/pti/rfcs/rfc-001-architecture)). TCU is not normative for conformance.
+
+**Reference implementation:** [TumiTrust partner billing](/tumitrust/billing/partner-billing).
 
 ## 8. Partner ecosystem
 
@@ -91,6 +93,6 @@ TumiTrust Ltd. *Portable Trust Infrastructure Whitepaper.* Available at https://
 
 ## Related
 
-- [Why PTI](/pti/introduction/why-pti-exists)
+- [Why PTI](/pti/why-pti/)
 - [Architecture guide](/tumitrust/product-overview/architecture)
 - [Company portfolio](/tumitrust/product-overview/company-portfolio)

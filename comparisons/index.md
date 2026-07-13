@@ -98,7 +98,7 @@ flowchart TB
 
 ## Related documentation
 
-- [Why PTI Exists](/pti/introduction/why-pti-exists)
+- [Why PTI Exists](/pti/why-pti/)
 - [PTI Specification v1.0](/pti/specification/v1.0/)
 - [Trust Context Catalogue](/pti/reference-architecture/trust-contexts)
 - [RFC Index](/pti/rfcs/)

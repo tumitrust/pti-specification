@@ -102,7 +102,7 @@ PTI introduces an infrastructure layer where trust can become:
 | **Auditable** | Provenance, consent, and retention are specification requirements |
 | **Interoperable** | Independent implementations exchange trust via shared semantics |
 
-See also [Why PTI exists](/pti/introduction/why-pti-exists) and [Problems with existing systems](/pti/introduction/problems-with-existing-systems) for comparative analysis.
+See also [Why PTI exists](/pti/why-pti/) and [Problems with existing systems](/pti/introduction/problems-with-existing-systems) for comparative analysis.
 
 ---
 

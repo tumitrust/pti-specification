@@ -53,10 +53,13 @@ flowchart LR
 
 | Topic | Document |
 |-------|----------|
-| Why PTI exists | [Why PTI Exists](/pti/introduction/why-pti-exists) |
+| Why PTI exists | [Why PTI exists](/pti/why-pti/) |
+| PTI vs TumiTrust | [PTI and TumiTrust](/pti/tumitrust-and-pti/) |
+| Architecture stack | [Trust infrastructure stack](/pti/architecture-stack/) |
 | Design principles | [Core Design Principles](/pti/introduction/design-principles) |
 | Normative specification | [PTI Specification v1.0](/pti/specification/v1.0/) |
 | Reference architecture | [Reference Architecture](/pti/reference-architecture/) |
+| Reference implementation | [TumiTrust reference implementation](/pti/reference-implementation/) |
 | Build a compatible platform | [Build Your Own PTI](/pti/build-your-pti/) |
 
 ## Reference implementations

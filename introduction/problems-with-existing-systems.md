@@ -36,4 +36,4 @@ Identity providers, KYC vendors, fraud engines, and credit bureaus each produce 
 ## Related
 
 - [Comparisons](/pti/comparisons/)
-- [Why PTI Exists](/pti/introduction/why-pti-exists)
+- [Why PTI Exists](/pti/why-pti/)

@@ -24,9 +24,17 @@ The operational layer connecting **trust producers**, the **trust graph**, and *
 
 ## Identity and subjects
 
+### Trust Subject
+
+An individual or organization whose trust signals, contexts, and lookups are governed under PTI. Identified by `pti_id` in the trust registry. Also referred to as **subject** in API and governance text.
+
 ### Trust Identity
 
 A registry-managed identity record for a subject, keyed by `pti_id`, with lifecycle state, verification level, and optional partner references.
+
+### Trust Credential
+
+A cryptographically verifiable claim, signed assertion, or verifiable credential presented as trust evidence — distinct from a derived **context score**.
 
 ### pti_id
 

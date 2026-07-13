@@ -95,7 +95,7 @@ Adverse-action and fair-lending obligations remain with the **institution**; PTI
 
 ## 6. Related PTI spec/RFC links
 
-- [Why PTI Exists](/pti/introduction/why-pti-exists)
+- [Why PTI Exists](/pti/why-pti/)
 - [Key concepts — not a credit bureau](/pti/introduction/key-concepts)
 - [RFC-002 — Trust Contexts](/pti/rfcs/rfc-002-trust-contexts)
 - [RFC-004 — Trust Lookup API](/pti/rfcs/rfc-004-trust-lookup-api)

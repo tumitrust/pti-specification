@@ -61,10 +61,13 @@ import PdfDownloadBar from '@site/src/components/PdfDownloadBar';
 | **Consumer rule** | Request allowed contexts per contract |
 | **Reports** | Context-scoped slices in trust intelligence JSON |
 
-Full producer configuration: [Trust contexts for producers](/tumitrust/platform/partner-trust-contexts#all-20-trust-contexts)
+Full producer configuration is implementation-specific. See the [trust context catalogue](/pti/reference-architecture/trust-contexts) for normative context IDs.
+
+## Reference implementation
+
+[TumiTrust trust contexts for producers](/tumitrust/platform/partner-trust-contexts#all-20-trust-contexts) · [Partner integration guide](/tumitrust/developer-guides/partner-integration) · [Financial services solutions](/tumitrust/solutions/financial-services)
 
 ## Related
 
-- [Solutions — Financial services](/tumitrust/solutions/financial-services)
-- [Why PTI](/pti/introduction/why-pti-exists)
-- [Partner integration guide](/tumitrust/developer-guides/partner-integration)
+- [Why PTI](/pti/why-pti/)
+- [Build Your Own PTI](/pti/build-your-pti/)

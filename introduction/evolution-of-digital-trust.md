@@ -24,6 +24,6 @@ PTI addresses this gap by making trust **infrastructure** — composable, portab
 
 ## Related
 
-- [Why PTI Exists](/pti/introduction/why-pti-exists)
+- [Why PTI Exists](/pti/why-pti/)
 - [Problems with Existing Systems](/pti/introduction/problems-with-existing-systems)
 - [Design Principles](/pti/introduction/design-principles)

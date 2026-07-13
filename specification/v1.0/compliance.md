@@ -1,23 +1,12 @@
 ---
 sidebar_position: 9
 title: Risk & Compliance Guide
-description: Screening, OpenSanctions, PEP, explainability, institution workflows, AML posture.
+description: Screening, compliance intelligence, explainability, and institution workflows in PTI v1.0.
 ---
-
-import PdfDownloadBar from '@site/src/components/PdfDownloadBar';
 
 # Risk & Compliance Guide
 
-<div class="tt-resource-hero">
-  <p class="tt-glossary-kicker">Risk & compliance</p>
-  <p class="tt-glossary-lead">Expanded public guide for insurers, banks, fintechs, and compliance officers.</p>
-</div>
-
-<PdfDownloadBar title="Risk & Compliance Guide" />
-
-:::info Technical integration
-For API fields and hub workflows, see [Risk & compliance intelligence](/guides/integration/risk-compliance-intelligence).
-:::
+This guide describes how PTI v1.0 supports **risk and compliance lenses** — screening dimensions, compliance intelligence payloads, and explainability for regulated workflows.
 
 ## Personas & lookup profiles
 
@@ -30,19 +19,19 @@ For API fields and hub workflows, see [Risk & compliance intelligence](/guides/i
 
 ## Screening dimensions
 
-When risk assessment workflow is selected:
+When a risk-assessment workflow is selected, implementations **MAY** integrate:
 
-- **Sanctions** (e.g. OpenSanctions-backed where configured)
+- **Sanctions** lists (e.g. OpenSanctions-backed where configured)
 - **PEP** — potential match → manual review
 - **Identity** — document and registry checks
 - **Business registry** — where contract enables
-- **UNSCR** packs (`unscr_1267`, `unscr_1373`, `unscr_1988`) when contracted
+- **UNSCR** packs when contracted
 
 Statuses: `clear` · `match_review` · `not_run` · `unavailable` (fail closed)
 
-## External subjects (not yet on TumiTrust)
+## External subjects (not yet in registry)
 
-Directory miss + strong identifiers → **automatic external screening** route. Bills screening credits separately from standard lookup tiers.
+When a subject is not found in the trust registry but strong identifiers are supplied, implementations **MAY** route to **external screening** providers. Screening **SHOULD** be metered separately from standard lookup tiers where billing applies.
 
 ## Compliance intelligence JSON
 
@@ -54,7 +43,19 @@ Additive `compliance_intelligence` block:
 
 ## Explainability & AML
 
-Institutions use **drivers** and **screening_summary** for committee packs — not black-box clearance. Adverse media may return `not_run` until dedicated provider enabled.
+Institutions use **drivers** and **screening_summary** for committee packs — not black-box clearance. Adverse media may return `not_run` until a dedicated provider is enabled.
+
+## Typical institution workflow
+
+1. Select risk-assessment profile and entitled contexts
+2. Resolve subject (`pti_id` or identity hints)
+3. Generate trust lookup with screening dimensions
+4. Review explainability and screening summary
+5. Export verifiable report artifact for audit (implementation-specific format)
+
+## Reference implementation
+
+[TumiTrust](/pti/reference-implementation/) documents production screening integration and institution hub workflows. See [Risk & compliance intelligence](/tumitrust/platform/risk-compliance-intelligence) and [Trust platform API — external screening](/tumitrust/developer-guides/trust-platform-api#external-screening-api).
 
 ## Governance cross-links
 
@@ -62,14 +63,7 @@ Institutions use **drivers** and **screening_summary** for committee packs — n
 - [Explainability guide](/pti/specification/v1.0/explainability)
 - [Security architecture](/pti/specification/v1.0/security)
 
-## Institution workflow (hosted)
-
-1. Compliance Center spotlight → Risk assessment lookup
-2. Lookup Studio → subject search → generate
-3. Insights Studio → screening grid + explain panel
-4. PDF verify QR for auditors
-
 ## Related
 
-- [Trust platform API — external screening](/tumitrust/developer-guides/trust-platform-api#external-screening-api)
-- [Trust Intelligence Reports](/guides/integration/trust-intelligence-reports)
+- [RFC-007 Governance](/pti/rfcs/rfc-007-governance)
+- [Trust Intelligence Reports](/tumitrust/platform/trust-intelligence-reports)

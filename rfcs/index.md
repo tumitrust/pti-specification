@@ -6,7 +6,16 @@ description: Index of Portable Trust Infrastructure Request for Comments documen
 
 # PTI RFC Index
 
-Portable Trust Infrastructure (PTI) normative specifications are published as numbered RFCs. Each RFC is self-contained but cross-references related documents. RFCs use [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) normative keywords: **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, **MAY**, and **RECOMMENDED**.
+Portable Trust Infrastructure (PTI) normative specifications evolve through **Request for Comments (RFC)** documents — public proposals reviewed by the community before they become normative.
+
+| Step | Action |
+|------|--------|
+| 1 | [Open an issue](https://github.com/tumitrust/pti-specification/issues) or discuss in the [Working Group](/pti/governance/working-group) |
+| 2 | Submit an RFC draft pull request using the template under `rfcs/` |
+| 3 | Review cycles: **Draft → Proposed → Final** per [RFC process](/pti/governance/rfc-process) |
+| 4 | Conformance tests updated where behavior is normative |
+
+Each RFC is self-contained but cross-references related documents. RFCs use [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) normative keywords: **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, **MAY**, and **RECOMMENDED**.
 
 ## RFC lifecycle
 

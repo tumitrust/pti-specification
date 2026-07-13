@@ -4,35 +4,22 @@ title: Trust Explainability Guide
 description: How trust intelligence is built — signals, confidence, drivers, and why outcomes differ.
 ---
 
-import PdfDownloadBar from '@site/src/components/PdfDownloadBar';
-
 # Trust Explainability Guide
 
-<div class="tt-resource-hero">
-  <p class="tt-glossary-kicker">Explainability</p>
-  <p class="tt-glossary-lead">Kills the <strong>black-box AI</strong> fear — structured drivers, provenance, and context-scoped slices.</p>
-</div>
+PTI-compatible implementations **MUST** expose explainability so institutions can review outcomes without treating intelligence as a black-box score.
 
-<PdfDownloadBar title="Trust Explainability Guide" />
+## What consumers receive
 
-## What institutions receive
+Trust lookups **SHOULD** include:
 
-TumiTrust provides **context-scoped trust intelligence** — not a single opaque "score" sold as a bureau file. Institutions receive:
-
-- **Confidence bands** and score percentages per context
+- **Confidence bands** and context-scoped score outcomes
 - **Drivers** — ranked factors with human-readable labels
-- **Provenance** — partner vs community vs verification sources
+- **Provenance** — partner, community, and verification sources
 - **Coverage gaps** — explicit thin-data flags (never implied clearance)
-
-Additional model governance documentation is available in institution hub **Compliance** and the Resources library.
 
 ## Explain contract (`explain_score.v1`)
 
-Trust reports and API JSON include explainability suitable for:
-
-- Committee review
-- Adverse-action workflows (institution responsibility)
-- Audit sampling
+Trust reports and API payloads include explainability suitable for committee review, adverse-action workflows (consumer responsibility), and audit sampling.
 
 Typical structure:
 
@@ -50,7 +37,7 @@ Typical structure:
 }
 ```
 
-See [Trust platform overview](/tumitrust/platform/trust-platform-overview) and [Trust platform API](/tumitrust/developer-guides/trust-platform-api).
+Normative detail: [RFC-012 Trust Evidence](/pti/rfcs/rfc-012-trust-evidence)
 
 ## Signals → drivers → outcome
 
@@ -64,30 +51,25 @@ flowchart LR
   Drivers --> Report[Trust lookup report]
 ```
 
-## Why two people differ
+## Why two subjects differ
 
 | Factor | Effect |
 |--------|--------|
 | **Context** | `lending` vs `rental` activate different signal sets |
 | **Coverage** | Thin partner linkage → explicit gaps, not silent defaults |
 | **Recency** | Recent verified events weigh more than stale silence |
-| **Partner weights** | Contract-bound source types per institution workflow |
+| **Source weights** | Contract-bound producer types per consumer workflow |
 
-## Insights Studio (institution hub)
+## Consumer interfaces
 
-**Explain panel** in Insights Studio mirrors API JSON:
+Implementations **MAY** expose explainability through APIs, structured reports, and operator consoles. UI product names are deployment-specific; the **JSON contract** above is what conformance tests validate.
 
-- Score composition chart
-- Heatmap across **20 contexts**
-- Evidence drill-down to trust events
-- Verify link on PDF (tamper-evident portal)
+## Reference implementation
 
-## AI as infrastructure
-
-Machine learning supports **signal fusion and identity resolution** — institutions still receive **structured, inspectable** outcomes.
+[TumiTrust](/pti/reference-implementation/) provides institution-facing explainability panels and API exports aligned with this guide. See [Trust platform overview](/tumitrust/platform/trust-platform-overview) and [Trust platform API](/tumitrust/developer-guides/trust-platform-api).
 
 ## Related
 
 - [Trust governance](/pti/specification/v1.0/governance)
 - [Risk & compliance](/pti/specification/v1.0/compliance)
-- [Why PTI](/pti/introduction/why-pti-exists)
+- [Why PTI exists](/pti/why-pti/)
