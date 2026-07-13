@@ -2,7 +2,7 @@
 
 Portable Trust Infrastructure (PTI) is an open technical specification for enabling **portable, programmable, and interoperable trust** across digital ecosystems.
 
-PTI was pioneered by **TumiTrust Technologies**, which developed the initial architecture, terminology, specifications, and reference implementation. This repository contains the evolving PTI specification and welcomes contributions from architects, researchers, engineers, institutions, and ecosystem participants.
+PTI was pioneered by **TumiTrust Technologies**, which developed the initial architecture, terminology, specifications, and reference implementation. This repository is **open for community participation** — welcome contributions from architects, researchers, engineers, institutions, and ecosystem participants.
 
 ## Status
 
@@ -10,7 +10,7 @@ PTI was pioneered by **TumiTrust Technologies**, which developed the initial arc
 |---|---|
 | **Version** | 1.0 |
 | **Status** | Stable |
-| **Published** | [docs.tumitrust.com/pti](https://tumitrust.com/docs/pti/) |
+| **Published** | [tumitrust.com/docs/pti](https://tumitrust.com/docs/pti/) |
 
 ## Repository layout
 
@@ -39,15 +39,16 @@ TumiTrust is the **founding steward**, not the owner of PTI. Conformance is meas
 
 ## Contributing
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md) and the published [Contributing guide](https://tumitrust.com/docs/pti/contributing/).
+This repository is public. You do **not** need a formal onboarding process to get started:
 
-- Propose changes via **RFCs**
-- Report security issues through coordinated disclosure
-- Join community participation via the Working Group process
+- **[Open an issue](https://github.com/tumitrust/pti-specification/issues)** — questions, errata, or ideas
+- **[Submit a pull request](https://github.com/tumitrust/pti-specification/pulls)** — typos, clarifications, RFC drafts, tests
 
-## Unified documentation site
+Read [CONTRIBUTING.md](./CONTRIBUTING.md) for lightweight guidance. Larger specification changes follow the [RFC process](rfcs/index.md); day-to-day fixes and discussion happen here on GitHub.
 
-Published documentation is built from the [tumitrust](https://github.com/tumitrust/tumitrust) monorepo and served at **docs.tumitrust.com** (today: `tumitrust.com/docs/`). This repository is the **standalone source tree** for PTI specification content, synced via git subtree.
+## Published documentation
+
+Specification pages are published on the main TumiTrust site at **[tumitrust.com/docs/pti](https://tumitrust.com/docs/pti/)** (under `/docs/` on [tumitrust.com](https://tumitrust.com)), alongside TumiTrust implementation guides. This repository is the standalone source tree for PTI content, synced from the [tumitrust](https://github.com/tumitrust/tumitrust) monorepo via git subtree.
 
 ## License
 

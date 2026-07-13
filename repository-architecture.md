@@ -1,6 +1,6 @@
 ---
 title: Repository architecture
-description: How PTI specification content is organized for independent development and unified publication at docs.tumitrust.com.
+description: How PTI specification content is organized for independent development and unified publication at tumitrust.com/docs/.
 sidebar_position: 1
 slug: /pti/repository-architecture/
 displayed_sidebar: ptiSidebar
@@ -16,7 +16,7 @@ This page describes how **Portable Trust Infrastructure (PTI)** specification co
 |------|----------|
 | PTI as open specification | Independent `docs/docs/pti/` corpus, vendor-neutral editorial rules |
 | TumiTrust as reference implementation | Separate `docs/docs/tumitrust/` corpus with implementation notes |
-| One visitor experience | Single Docusaurus site at **docs.tumitrust.com** (today: `tumitrust.com/docs/`) |
+| One visitor experience | Single Docusaurus site at **[tumitrust.com/docs/](https://tumitrust.com/docs/)** |
 | Contributor-friendly | No git submodules; git subtree for future repo split |
 | Stable URLs | Redirects in `docusaurus.config.ts` for legacy paths |
 
