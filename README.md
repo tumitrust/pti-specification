@@ -10,7 +10,7 @@ PTI was pioneered by **TumiTrust Technologies**, which developed the initial arc
 |---|---|
 | **Version** | 1.0 |
 | **Status** | Stable |
-| **Published** | [tumitrust.com/docs/pti](https://tumitrust.com/docs/pti/) |
+| **Published** | [tumitrust.com/docs/pti](https://tumitrust.com/docs/pti/origin/) |
 
 ## Repository layout
 
@@ -44,11 +44,11 @@ This repository is public. You do **not** need a formal onboarding process to ge
 - **[Open an issue](https://github.com/tumitrust/pti-specification/issues)** — questions, errata, or ideas
 - **[Submit a pull request](https://github.com/tumitrust/pti-specification/pulls)** — typos, clarifications, RFC drafts, tests
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md) for lightweight guidance. Larger specification changes follow the [RFC process](rfcs/index.md); day-to-day fixes and discussion happen here on GitHub.
+Specification changes follow the [RFC process](rfcs/index.md); day-to-day fixes and discussion happen here on GitHub.
 
 ## Published documentation
 
-Specification pages are published on the main TumiTrust site at **[tumitrust.com/docs/pti](https://tumitrust.com/docs/pti/)** (under `/docs/` on [tumitrust.com](https://tumitrust.com)), alongside TumiTrust implementation guides.
+Specification pages are published on the main TumiTrust site at **[tumitrust.com/docs/pti](https://tumitrust.com/docs/pti/origin/)** (under `/docs/` on [tumitrust.com](https://tumitrust.com)), alongside TumiTrust implementation guides.
 
 ## License
 
